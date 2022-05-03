@@ -7,7 +7,7 @@
 %% Firmenlogo
 \includegraphics[width=0.2\linewidth]{images/Firmenlogo} \hfill
 % DHBW-Logo
-\includegraphics[width=0.25\linewidth]{images/DHBW_Logo} [2\bigskip]
+\includegraphics[width=0.25\linewidth]{images/DHBW_Logo} \vspace{2\baselineskip}
 %
 %% Titel
 \begin{center} 	% Text zentrieren
@@ -16,7 +16,7 @@
 %
 %% Untertitel
 {\large
-	\textbf{\untertitel}\\[5ex] }
+	\textbf{\untertitel} \\} \vspace{2\baselineskip}
 %
 %% Art der Arbeit
 {\Large 
