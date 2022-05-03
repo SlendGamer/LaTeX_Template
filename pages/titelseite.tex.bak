@@ -2,60 +2,53 @@
 \hypersetup{pageanchor=false}
 \begin{titlepage}
 \enlargethispage{20mm}
-\sffamily 								% Serifenlose Grundschrift für die Titelseite einstellen
-
-%% Firmenlogo
-%\parbox{0.5\linewidth}{
-\begin{flushleft}		% Text linksbündig ausrichten
-	\includegraphics[width=0.25\textwidth]{images/Firmenlogo}\\[5ex] % Hier ggf. ein Logo der Firma einfügen
-\end{flushleft}
-%}
+\sffamily % Serifenlose Grundschrift für die Titelseite einstellen
 %
-%% DHBW-Logo
-%\parbox{0.5\linewidth}{
-\begin{flushright}		% Text rechtsbündig ausrichten
-	\includegraphics[width=0.25\textwidth]{images/DHBW_Logo}\\[5ex]
-\end{flushright}
-%}
+%% Firmenlogo
+\includegraphics[width=0.2\linewidth]{images/Firmenlogo} \hfill
+% DHBW-Logo
+\includegraphics[width=0.25\linewidth]{images/DHBW_Logo} [2\bigskip]
 %
 %% Titel
 \begin{center} 	% Text zentrieren
-{\fontsize{20.74pt}{24pt}\selectfont
-	\textbf{\titel}\\[1.5ex]}
+{\LARGE 
+	\textbf{\titel}\\[1.5ex] }
 %
 %% Untertitel
-{\fontsize{14pt}{17pt}\selectfont
-	\textbf{\untertitel}\\[5ex]}
+{\large
+	\textbf{\untertitel}\\[5ex] }
 %
-%% Arbeit
-{\fontsize{17pt}{20pt}\selectfont
-	\textbf{\arbeit}\\[2ex]}
+%% Art der Arbeit
+{\Large 
+	\textbf{\arbeit}\\[2ex] }
 %
 %% Studiengang
-{\fontsize{14pt}{17pt}\selectfont
-	Studiengang \studiengang\\[2ex]}
+{\large
+	Studiengang \studiengang\\[2ex] }
 %
 %% Studienrichtung und Autor
-{\fontsize{12pt}{14pt}\selectfont
+{\normalsize
 	Studienrichtung \studienrichtung\\[1ex]
 	Duale Hochschule Baden-Württemberg Ravensburg, Campus Friedrichshafen\\[5ex]
 	von\\[1ex]
-	\autor\\[15ex]}
-\end{center}
+	\autor\\[15ex] }
+\end{center} \vfill
 %
 %% weitere Angaben
 \begin{flushleft}
-{\fontsize{12pt}{14pt}\selectfont
-\begin{tabular}{ll}		% 
-	Abgabedatum:			& \quad \abgabe \\
-	%Bearbeitungszeitraum:	& \quad 12 Wochen   \\
-	Matrikelnummer: 		& \quad \matrikelnr \\
-	Kurs: 					& \quad \kurs \\
-	%Ausbildungsfirma:	 	& \quad \firma \\
-	Abgabe bei: 			& \quad \betreuerdhbw \\ [2ex]
+{\normalsize %\fontsize{12pt}{14pt}\selectfont
+\begin{tabular}{ll}	
+	Abgabedatum:						& \quad \abgabe \\
+	Bearbeitungszeitraum:		   		& \quad \bearbeitungszeitraum \\ 
+	Matrikelnummer: 					& \quad \matrikelnr \\ 
+	Kurs: 								& \quad \kurs \\
+	Ausbildungsfirma:	 				& \quad \firma \\ 
+	Betreuer der Ausbildungsfirma:  	& \quad \betreuerfirma \\ 
+	Gutachter der Dualen Hochschule: 	& \quad \betreuerdhbw
 \end{tabular}
-}
+} 
 \end{flushleft}
+\vspace{2.5\baselineskip}
 %
 %%%%% Nachfolgende Zeilen einkommentieren, wenn Copyrightvermerk gewünscht ist
 %\begin{flushleft}

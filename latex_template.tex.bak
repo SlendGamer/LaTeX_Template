@@ -24,23 +24,30 @@ ngerman
 \usepackage{scrhack}			% erlaubt Anpassung der Koma-Skript Klassen	
 \usepackage[utf8]{inputenc} 	% ermöglicht die direkte Eingabe von Umlauten
 \usepackage[T1]{fontenc} 		% Ausgabe aller zeichen in einer T1-Codierung (wichtig für die Ausgabe von Umlauten!)
-\usepackage{babel} 				% deutsche Trennungsregeln und Übersetzung der festcodierten Überschriften (chapter => kapitel, usw.)
+\usepackage[ngerman]{babel} 				% deutsche Trennungsregeln und Übersetzung der festcodierten Überschriften (chapter => kapitel, usw.)
 
 %% Einstellung der Abstände
-\setlength{\parindent}{0ex} 	% bei neuem Abschnitt nicht einrücken
 \usepackage[onehalfspacing]{setspace} % Zeilenabstand festlegen
+\usepackage[margin=2.5cm]{geometry} % Ränder entsprechend der Richtlinien
+
+\setlength{\parindent}{0ex} % bei neuem Abschnitt nicht einrücken
+\setlength{\parskip}{\bigskipamount} % Abstand nach neuem Absatz
+%\setlength{\itemsep}{1pt} % Abstand zwischen Listenelementen
 
 % Abstände vor/nach neuen Abschnitten
+% Einstellung für Chapter
 \RedeclareSectionCommand[
   %runin=false,
   afterindent=false,
-  beforeskip=0pt,
-  afterskip=2\baselineskip]{chapter}
+  beforeskip=\baselineskip,
+  afterskip=\baselineskip]{chapter}
+% für Sections
 \RedeclareSectionCommand[
   %runin=false,
   afterindent=false,
   beforeskip=\baselineskip,
   afterskip=.5\baselineskip]{section}
+% für Subsections
 \RedeclareSectionCommand[
   %runin=false,
   afterindent=false,
@@ -193,14 +200,14 @@ marginal
 \newcommand{\titel}{Titel der wissenschaftlichen Arbeit}
 \newcommand{\untertitel}{Untertitel (optional)}
 \newcommand{\arbeit}{Projektbericht / Studienarbeit / Laborbericht / etc.}
-\newcommand{\studiengang}{Studiengang}
-\newcommand{\studienrichtung}{Studienrichtung}
-\newcommand{\studienschwerpunkt}{Studienschwerpunkt}
+\newcommand{\studiengang}{}
+\newcommand{\studienrichtung}{}
 \newcommand{\autor}{Name des Autors}
 \newcommand{\matrikelnr}{Matrikelnummer}
 \newcommand{\kurs}{Kursbezeichnung}
 \newcommand{\firma}{Duales Partnerunternehmen}
 \newcommand{\abgabe}{Datum der Abgabe}
+\newcommand{\bearbeitungszeitraum}{xx.xx.20xx - yy.yy.20yy}
 \newcommand{\betreuerdhbw}{Betreuer der DHBW}
 \newcommand{\betreuerfirma}{Betreuer des Partnerunternehmens}
 \newcommand{\jahr}{20xx}			% für Angabe im Copyright-Vermerk der Titelseite
