@@ -1,4 +1,4 @@
-# Vorlage für Wissenschaftliche Dokumentation
+# Vorlage für wissenschaftliche Dokumentation
 
 Diese Vorlage basiert auf der Vorlage von Herrn Kibler: [GitHub - tkibler/vorlage_latex_doku](https://github.com/tkibler/vorlage_latex_doku.git)
 
