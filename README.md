@@ -1,4 +1,4 @@
-# Vorlage für Wissenschaftliche Dokumentation
+# Vorlage für wissenschaftliche Dokumentation
 
 Diese Vorlage basiert auf der Vorlage von Herrn Kibler: [GitHub - tkibler/vorlage_latex_doku](https://github.com/tkibler/vorlage_latex_doku.git)
 
@@ -10,4 +10,4 @@ Ich habe sie angepasst, d.h.
 - Ordnerstruktur angepasst
 - Schriftarten angepasst
 
-Diese Vorlage wird mehr oder weniger aktuell gehalten.
+Diese Vorlage wird mehr oder weniger aktuell gehalten, da sie auch die Vorlage ist, die ich für meine Dokumentationen benutze.
