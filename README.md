@@ -10,4 +10,4 @@ Ich habe sie angepasst, d.h.
 - Ordnerstruktur angepasst
 - Schriftarten angepasst
 
-Diese Vorlage wird mehr oder weniger aktuell gehalten.
+Diese Vorlage wird mehr oder weniger aktuell gehalten, da sie auch die Vorlage ist, die ich für meine Dokumentationen benutze
