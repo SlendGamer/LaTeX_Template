@@ -4,48 +4,59 @@
 \enlargethispage{20mm}
 \sffamily 								% Serifenlose Grundschrift für die Titelseite einstellen
 
-\parbox{0.5\linewidth}{
-\begin{flushleft}
-	\includegraphics[width=0.4\linewidth]{images/DB_Logo}\\[5ex]% Hier ggf. ein Logo der Firma
+%% Firmenlogo
+%\parbox{0.5\linewidth}{
+\begin{flushleft}		% Text linksbündig ausrichten
+	\includegraphics[width=0.25\textwidth]{images/Firmenlogo}\\[5ex] % Hier ggf. ein Logo der Firma einfügen
 \end{flushleft}
-}
-\parbox{0.5\linewidth}{
-\begin{flushright}
-	\includegraphics[width=0.6\linewidth]{images/DHBW_d_R_FN_46mm_4c}\\[5ex]
+%}
+%
+%% DHBW-Logo
+%\parbox{0.5\linewidth}{
+\begin{flushright}		% Text rechtsbündig ausrichten
+	\includegraphics[width=0.25\textwidth]{images/DHBW_Logo}\\[5ex]
 \end{flushright}
-}
-				
-
-\begin{center}
+%}
+%
+%% Titel
+\begin{center} 	% Text zentrieren
 {\fontsize{20.74pt}{24pt}\selectfont
-\textbf{\titel}\\[1.5ex]}
+	\textbf{\titel}\\[1.5ex]}
+%
+%% Untertitel
 {\fontsize{14pt}{17pt}\selectfont
-\textbf{\untertitel}\\[5ex]}
+	\textbf{\untertitel}\\[5ex]}
+%
+%% Arbeit
 {\fontsize{17pt}{20pt}\selectfont
-\textbf{\arbeit}\\[2ex]}
+	\textbf{\arbeit}\\[2ex]}
+%
+%% Studiengang
 {\fontsize{14pt}{17pt}\selectfont
-Studiengang \studiengang\\[2ex]}
+	Studiengang \studiengang\\[2ex]}
+%
+%% Studienrichtung und Autor
 {\fontsize{12pt}{14pt}\selectfont
-Studienrichtung \studienrichtung\\[1ex]
-Duale Hochschule Baden-Württemberg Ravensburg, Campus Friedrichshafen\\[5ex]
-von\\[1ex]
-\autor\\[15ex]}
+	Studienrichtung \studienrichtung\\[1ex]
+	Duale Hochschule Baden-Württemberg Ravensburg, Campus Friedrichshafen\\[5ex]
+	von\\[1ex]
+	\autor\\[15ex]}
 \end{center}
-
-
+%
+%% weitere Angaben
 \begin{flushleft}
 {\fontsize{12pt}{14pt}\selectfont
-\begin{tabular}{ll}
-Abgabedatum:					& \quad \abgabe \\
-Bearbeitungszeitraum:		   		& \quad 12 Wochen   \\ 
-Matrikelnummer: 			& \quad \matrikelnr \\ 
-Kurs: 							& \quad \kurs \\
-Ausbildungsfirma:	 			& \quad \firma \\ 
-Betreuer der Ausbildungsfirma:  & \quad \betreuerfirma \\ 
-Gutachter der Dualen Hochschule: & \quad \betreuerdhbw \\ [2ex]
+\begin{tabular}{ll}		% 
+	Abgabedatum:			& \quad \abgabe \\
+	%Bearbeitungszeitraum:	& \quad 12 Wochen   \\
+	Matrikelnummer: 		& \quad \matrikelnr \\
+	Kurs: 					& \quad \kurs \\
+	%Ausbildungsfirma:	 	& \quad \firma \\
+	Abgabe bei: 			& \quad \betreuerdhbw \\ [2ex]
 \end{tabular}
 }
 \end{flushleft}
+%
 %%%%% Nachfolgende Zeilen einkommentieren, wenn Copyrightvermerk gewünscht ist
 %\begin{flushleft}
 %{\fontsize{11pt}{13pt}\selectfont
@@ -56,7 +67,8 @@ Gutachter der Dualen Hochschule: & \quad \betreuerdhbw \\ [2ex]
 %\begin{flushright}
 %{\fontsize{11pt}{13pt}\selectfont \copyright{} \jahr }
 %\end{flushright}
+%
 \end{titlepage}
-
+%
 \cleardoublepage
 \hypersetup{pageanchor=true}
