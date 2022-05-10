@@ -1,0 +1,14 @@
+
+\begin{thenomenclature} 
+\nomgroup{A}
+  \item [{bzw.}]\begingroup beziehungsweise\nomeqref {4.0}\nompageref{5}
+  \item [{DHBW}]\begingroup Duale Hochschule Baden-Württemberg\nomeqref {4.0}\nompageref{5}
+  \item [{etc.}]\begingroup et cetera\nomeqref {4.0}\nompageref{5}
+  \item [{z.B.}]\begingroup zum Beispiel\nomeqref {4.0}\nompageref{5}
+\nomgroup{F}
+  \item [{$I$}]\begingroup Stromstärke \nomunit{\si{\ampere}}\nomeqref {4.0}\nompageref{5}
+  \item [{$P$}]\begingroup Leistung \nomunit{\si{\watt}}\nomeqref {4.0}\nompageref{5}
+  \item [{$R$}]\begingroup Widerstand \nomunit{\si{\ohm}}\nomeqref {4.0}\nompageref{5}
+  \item [{$U$}]\begingroup Spannung \nomunit{\si{\volt}}\nomeqref {4.0}\nompageref{5}
+
+\end{thenomenclature}

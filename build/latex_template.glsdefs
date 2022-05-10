@@ -1,0 +1,140 @@
+\glsdefs@newdocentry{dhbw}%
+{%
+name={DHBW},%
+sort={DHBW},%
+type={main},%
+first={Duale Hochschule Baden-Württemberg\glsspace (DHBW)},%
+firstplural={Duale Hochschule Baden-Württemberg\acrpluralsuffix \glsspace (DHBW\acrpluralsuffix )},%
+text={DHBW},%
+plural={DHBW\acrpluralsuffix },%
+description={Duale Hochschule Baden-Württemberg},%
+descriptionplural={Duale Hochschule Baden-Württemberg\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Duale Hochschule Baden-Württemberg},%
+longplural={Duale Hochschule Baden-Württembergs},%
+short={DHBW},%
+shortplural={DHBWs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{zb}%
+{%
+name={z.B.},%
+sort={z.B.},%
+type={main},%
+first={zum Beispiel\glsspace (z.B.)},%
+firstplural={zum Beispiel\acrpluralsuffix \glsspace (z.B.\acrpluralsuffix )},%
+text={z.B.},%
+plural={z.B.\acrpluralsuffix },%
+description={zum Beispiel},%
+descriptionplural={zum Beispiel\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={zum Beispiel},%
+longplural={zum Beispiels},%
+short={z.B.},%
+shortplural={z.B.s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{bzw}%
+{%
+name={bzw.},%
+sort={bzw.},%
+type={main},%
+first={beziehungsweise\glsspace (bzw.)},%
+firstplural={beziehungsweise\acrpluralsuffix \glsspace (bzw.\acrpluralsuffix )},%
+text={bzw.},%
+plural={bzw.\acrpluralsuffix },%
+description={beziehungsweise},%
+descriptionplural={beziehungsweise\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={beziehungsweise},%
+longplural={beziehungsweises},%
+short={bzw.},%
+shortplural={bzw.s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{etc}%
+{%
+name={etc.},%
+sort={etc.},%
+type={main},%
+first={et cetera\glsspace (etc.)},%
+firstplural={et cetera\acrpluralsuffix \glsspace (etc.\acrpluralsuffix )},%
+text={etc.},%
+plural={etc.\acrpluralsuffix },%
+description={et cetera},%
+descriptionplural={et cetera\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={et cetera},%
+longplural={et ceteras},%
+short={etc.},%
+shortplural={etc.s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{computer}%
+{%
+name={Computer},%
+sort={Computer},%
+type={main},%
+first={Computer},%
+firstplural={Computers},%
+text={Computer},%
+plural={Computers},%
+description={ist eine Programmierbare Maschine, die Eingaben erhält, speichert, Daten manipuliert und in einem nützlichen Format darstellt},%
+descriptionplural={ist eine Programmierbare Maschine, die Eingaben erhält, speichert, Daten manipuliert und in einem nützlichen Format darstellt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

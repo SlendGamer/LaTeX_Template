@@ -1,0 +1,8 @@
+\nomenclatureentry{ADHBW@[{DHBW}]\begingroup Duale Hochschule Baden-Württemberg\nomeqref {4.0}|nompageref}{5}
+\nomenclatureentry{Az.B.@[{z.B.}]\begingroup zum Beispiel\nomeqref {4.0}|nompageref}{5}
+\nomenclatureentry{Abzw.@[{bzw.}]\begingroup beziehungsweise\nomeqref {4.0}|nompageref}{5}
+\nomenclatureentry{Aetc.@[{etc.}]\begingroup et cetera\nomeqref {4.0}|nompageref}{5}
+\nomenclatureentry{F$P$@[{$P$}]\begingroup Leistung \nomunit{\si{\watt}}\nomeqref {4.0}|nompageref}{5}
+\nomenclatureentry{F$U$@[{$U$}]\begingroup Spannung \nomunit{\si{\volt}}\nomeqref {4.0}|nompageref}{5}
+\nomenclatureentry{F$I$@[{$I$}]\begingroup Stromstärke \nomunit{\si{\ampere}}\nomeqref {4.0}|nompageref}{5}
+\nomenclatureentry{F$R$@[{$R$}]\begingroup Widerstand \nomunit{\si{\ohm}}\nomeqref {4.0}|nompageref}{5}

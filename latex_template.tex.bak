@@ -1,4 +1,11 @@
-%% PRÄAMBEL =====================================
+% -------------------------------------------------------------------------------------------------
+% Originalvorlage von Prof. Kibler:
+% https://github.com/tkibler/vorlage_latex_doku.git
+%
+% Angepasste Version von T. Prüß:
+% https://github.com/SlendGamer/LaTeX_Template.git
+% -------------------------------------------------------------------------------------------------
+%% PRÄAMBEL =======================================================================================
 \documentclass[
 12pt,						% Schriftgröße
 a4paper,					% Papierformat
@@ -8,6 +15,7 @@ bibliography=totoc,			% Literaturverzeichnis ins Inhaltsverzeichnis aufnehmen
 titlepage, 					% Titlepage-Umgebung statt \maketitle
 headsepline, 				% horizontale Linie unter Kolumnentitel
 %abstracton,				% Überschrift beim Abstract einschalten, Abstract muss dazu in {abstract}-Umgebung stehen
+numbers=noenddot,			% Abschnittszahlen ohne Punkt am Ende
 DIV=12,						% Satzspiegeleinstellung, 12 ist Standard bei KOMA-Script
 %BCOR=6mm,					% Bindekorrektur, die den Seitenspiegel um 6mm nach rechts verschiebt,
 %cleardoublepage=empty,	% Stil einer leeren eingefügten Seite bei Kapitelwechsel
@@ -15,7 +23,7 @@ parskip,					% Absatzabstand bei Absatzwechsel einfügen
 ngerman
 ]{scrbook}
 
-%% PACKAGES UND EINSTELLUNGEN ===================
+%% PACKAGES UND EINSTELLUNGEN =====================================================================
 
 %% Debugging
 %\usepackage{showframe}	% Anzeigen des Seitenlayouts; für Debugging auskommentieren
@@ -23,46 +31,47 @@ ngerman
 
 \usepackage{scrhack}			% erlaubt Anpassung der Koma-Skript Klassen	
 \usepackage[utf8]{inputenc} 	% ermöglicht die direkte Eingabe von Umlauten
-\usepackage[T1]{fontenc} 		% Ausgabe aller zeichen in einer T1-Codierung (wichtig für die Ausgabe von Umlauten!)
+\usepackage[T1]{fontenc} 		% Ausgabe aller Zeichen in einer T1-Codierung (wichtig für die Ausgabe von Umlauten!)
 \usepackage[ngerman]{babel} 				% deutsche Trennungsregeln und Übersetzung der festcodierten Überschriften (chapter => kapitel, usw.)
 
 %% Einstellung der Abstände
 \usepackage[onehalfspacing]{setspace} % Zeilenabstand festlegen
 \usepackage[margin=2.5cm]{geometry} % Ränder entsprechend der Richtlinien
 
-\setlength{\parindent}{0ex} % bei neuem Abschnitt nicht einrücken
-\setlength{\parskip}{\bigskipamount} % Abstand nach neuem Absatz
-%\setlength{\itemsep}{1pt} % Abstand zwischen Listenelementen
+\setlength{\parindent}{0ex} 			% bei neuem Absatz nicht einrücken
+\setlength{\parskip}{\bigskipamount} 	% Abstand nach neuem Absatz
+%\setlength{\itemsep}{1pt} 			% Abstand zwischen Listenelementen
 
-% Abstände vor/nach neuen Abschnitten
+% Abstände vor/nach neuen Abschnittsüberschriften
 % Einstellung für Chapter
 \RedeclareSectionCommand[
   %runin=false,
   afterindent=false,
-  beforeskip=\baselineskip,
+  beforeskip=.5\baselineskip,
   afterskip=\baselineskip]{chapter}
 % für Sections
 \RedeclareSectionCommand[
   %runin=false,
   afterindent=false,
-  beforeskip=\baselineskip,
-  afterskip=.5\baselineskip]{section}
+  beforeskip=.8\baselineskip,
+  afterskip=.8\baselineskip]{section}
 % für Subsections
 \RedeclareSectionCommand[
   %runin=false,
   afterindent=false,
-  beforeskip=.75\baselineskip,
-  afterskip=.5\baselineskip]{subsection}
+  beforeskip=.6\baselineskip,
+  afterskip=.6\baselineskip]{subsection}
 
-% -----------------------------------------------
+% -------------------------------------------------------------------------------------------------
 % Folgende Einstellungen sind bei größeren Arbeiten mit viel Text zu empfehlen.
 % Hierbei oben DIV=16 einstellen und Zeile \usepackage[onehalfspacing]{setspace} auskommentieren.
 % \linespread{1.2}\selectfont     % Zeilenabstand erhöhen - größere Werte als 1.2 nicht verwenden!!
-% -----------------------------------------------
+% -------------------------------------------------------------------------------------------------
 
 %% Schriftarten
+%\usepackage{fontspec}	% ermöglicht spezielle Änderungen an der Schriftart
 \usepackage{helvet}		% Änderung der Serifenlosen Schriftart auf Helvetica (Arial); kann bei Bedarf auskommentiert werden
-\usepackage{mathptmx}	% Änderung der Serifen und Mathe Schriftart auf Times New Roman; kann auskommentiert werden
+%\usepackage{mathptmx}	% Änderung der Serifen und Mathe Schriftart auf Times New Roman; kann auskommentiert werden
 
 %% Zeichen und Mathematik
 \usepackage{amsmath, amssymb}	% Beinhaltet Ergänzungen für Formeln
@@ -82,9 +91,9 @@ ngerman
 \usepackage{float}			% Ermöglicht "Floating-Objects" im Dokument, also Objekte, die frei auf der Seite platziert werden können
 \usepackage{pdfpages}			% Ermöglicht Einführung von bestehenden PDF Seiten (z.B. Datenblätter, Zeichnungen, ...)
 
-% Bildunter- & überschriften
+%% Formatierung von Bildunter- & überschriften
 \usepackage[
-format=hang,		% Formatierungseinstellungen von Unter- / Überschriften
+format=hang,	
 font=normal,
 labelfont=bf,
 justification=RaggedRight,
@@ -99,7 +108,7 @@ style=alphabetic, 	% Zitierstil (siehe Dokumentation!!!)
 natbib=true,		% Bereitstellen von natbib-kompatiblen Zitierkommandos
 hyperref=true, 		% hyperref-Paket verwenden, um Links zu erstellen
 ]{biblatex}
-\addbibresource{literature/literature.bib} 	% Einbinden der .bib-Datei
+\addbibresource{literature/literature.bib} % Einbinden der .bib-Datei
 
 % Folgende Zeilen auskommentieren, falls runde Klammern und ein "vgl." bei Zitaten erscheinen sollen.
 %\makeatletter
@@ -107,7 +116,7 @@ hyperref=true, 		% hyperref-Paket verwenden, um Links zu erstellen
 %\renewcommand{\@biblabel}[1]{(#1)}
 %\makeatother
 
-\usepackage{enumitem}			% Package für mehr Aufzählungsoptionen
+\usepackage{enumitem}			% mehr Aufzählungsoptionen
 \usepackage{tabto}				% Ermöglicht Verwendung von Tabstops zur Einrückung von Text
 
 \usepackage[					% Einstellungen für Referenzierung
@@ -121,10 +130,42 @@ hang,
 marginal
 ]{footmisc}
 
-%% weitere Verzeichnisse
-%\usepackage[intoc]{nomencl} 	% zur Erstellung des Abkürzungsberzeichnisses (veraltet)
-\usepackage[toc]{glossaries}
-\makeglossaries
+%% Abkürzungsverzeichnis --------------------------------------------------------------------------
+
+%\usepackage[toc]{glossaries}	% Neues Paket
+\usepackage[intoc]{nomencl} 	% zur Erstellung des Abkürzungsberzeichnisses (veraltet)
+
+\renewcommand{\nomname}{Verzeichnis verwendeter Formelzeichen und Abkürzungen}
+\setlength{\nomlabelwidth}{.2\hsize}
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+\setlength{\nomitemsep}{-\parsep}
+
+% Schnellmakro für Einheiten
+\newcommand{\nomunit}[1]{%
+  \renewcommand{\nomentryend}{\dotfill[#1]\nolinebreak}%
+}
+
+% Gruppierung der Einträge
+\usepackage{etoolbox}
+\renewcommand\nomgroup[1]{%
+  \item[\rule{0pt}{2\baselineskip}\bfseries
+  \ifstrequal{#1}{A}{Abkürzungen \hfill}{%
+  \ifstrequal{#1}{B}{Begriffserläuterungen \hfill}{%
+  \ifstrequal{#1}{F}{Formelzeichen \hfill}{}}}%
+]}
+
+%\newglossary[nlg]{formulas}{not}{ntn}{Nomenclature}
+%\newglossary[slg]{acronym}{sot}{stn}{Abbreviations}
+
+%\makeglossaries	% Neue Variante mit 'glossaries'
+\makenomenclature 	% Alt
+
+% -------------------------------------------------------------------------------------------------
+% Zum Aktualisieren des Abkürzungsverzeichnisses (Nomenklatur) bitte auf der Kommandozeile folgenden Befehl aufrufen:
+% makeindex <Dateiname>.nlo -s nomencl.ist -o <Dateiname>.nls
+% Oder besser: Kann in TexStudio unter Tools-Benutzer als Shortlink angelegt werden
+% Konfiguration unter: Optionen-Erzeugen-Benutzerbefehle: makeindex -s nomencl.ist -t %.nlg -o %.nls %.nlo
+% -------------------------------------------------------------------------------------------------
 
 \usepackage{calc}			% Ermöglicht eine andere Eingabe von Längen (0.8\textwidth)
 \usepackage{xcolor} 		% Ermöglicht Verwendung von Farben in nahezu allen Farbmodellen
@@ -185,14 +226,7 @@ marginal
 	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
-% -----------------------------------------------
-% Zum Aktualisieren des Abkürzungsverzeichnisses (Nomenklatur) bitte auf der Kommandozeile folgenden Befehl aufrufen :
-% makeindex <Dateiname>.nlo -s nomencl.ist -o <Dateiname>.nls
-% Oder besser: Kann in TexStudio unter Tools-Benutzer als Shortlink angelegt werden
-% Konfiguration unter: Optionen-Erzeugen-Benutzerbefehle: makeindex -s nomencl.ist -t %.nlg -o %.nls %.nlo
-% -----------------------------------------------
-
-%% DEFINES ======================================
+%% DEFINES ========================================================================================
 
 % Hier die persönlichen Daten eingeben:
 % Die Befehle können als Variablen betrachtet werden, die im Titelblatt eingesetzt werden
@@ -214,26 +248,20 @@ marginal
 
 % Folgende Zeilen definieren Abkürzungen, um Befehle schneller eingeben zu können
 \newcommand{\bs}{\textbackslash}
-\newcommand*\diff{\mathop{}\!\mathrm{d}}				% Differentialzeichen
-\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}} 		% Differentialzeichen höherer Ableitung
-\newcommand*\jj{\mathop{}\!\mathrm{j}}					% Komplexe Zahl j (in E-Tech gebräuchlich)
-\let\texteuro\euro % Eingabe des Euro-Zeichen über \texteuro oder \euro
+\newcommand*\diff{\mathop{}\!\mathrm{d}}				% Differentialzeichen mittels: \diff
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}} 		% Differentialzeichen n-ter Ordnung mittels: \Diff[n]
+\newcommand*\jj{\mathop{}\!\mathrm{j}}					% Komplexe Zahl j (in E-Tech gebräuchlich) mittels: \jj
+\let\texteuro\euro 										% Eingabe des Euro-Zeichen über: \texteuro oder \euro
 
-% Abkürzungseinträge
-% \newacronym{kürzel}{abkürzung}{langform}
-\newacronym{zb}{z.B.}{zum Beispiel}
-% Referenzierung
-% \gls{kürzel}
-
-%% BEGINN DES DOKUMENTENINHALTS =================
+%% BEGINN DES DOKUMENTENINHALTS ===================================================================
 
 \begin{document}
 \let\texteuro\euro					% Eingabe \texteuro, € oder \euro erzeugt gleiches Ergebnis
 \setcounter{secnumdepth}{3}		% maximale Nummerierungstiefe fürs Inhaltsverzeichnis 
-\setcounter{tocdepth}{3}
-\sffamily							% für die Titelei wird serifenlose Schrift verwendet
+\setcounter{tocdepth}{3}			% analog zu 'secnumdepth' aber allgemein für das Inhaltsverzeichnis
+\sffamily							% Festlegung von Serifenloser Schrift für die Titelei
 
-%% TITELEI --------------------------------------
+%% TITELEI ----------------------------------------------------------------------------------------
 
 \pagenumbering{roman}				% kleine, römische Seitenzahlen für Titelei
 \include{pages/titelseite} 		% erzeugt die Titelseite
@@ -241,52 +269,44 @@ marginal
 \include{chapters/abstract}   		% Einbinden des Abstracts (der Kurzfassung)
 
 \tableofcontents					% Erzeugen des Inhaltsverzeichnisses
-\cleardoublepage
+\clearpage							% Seitenumbruch an aktueller Stelle (alternativ auch '\newpage' möglich)
 
-%% BEGINN DES DOKUMENTS -------------------------
+%% BEGINN DES DOKUMENTS ---------------------------------------------------------------------------
 
-\pagenumbering{arabic}					% arabische Seitenzahlen für den Hauptteil
-\rmfamily
+\pagenumbering{arabic}	% arabische Seitenzahlen für den Hauptteil
+\rmfamily				% Serifenschrift für Fließtext festlegen
 
 \include{chapters/einleitung}
 \include{chapters/grundlagen}
 \include{chapters/hauptteil}
 \include{chapters/reflexion}
 
-%% LITERATURVERZEICHNIS -------------------------
+%% LITERATURVERZEICHNIS ---------------------------------------------------------------------------
 
-\interlinepenalty 10000				% Verhindert einen Umbruch mitten in Literatureinträgen
-\nocite{*}								% Literaturverzeichnis ohne Zitation einblenden
-\printbibliography						% Erstellen des Literaturverzeichnisses
+\nocite{*}					% Literaturverzeichnis ohne Zitation einblenden
+\interlinepenalty 10000	% Verhindert einen Umbruch mitten in Literatureinträgen
+\printbibliography			% Erstellen des Literaturverzeichnisses
 
-%% VERZEICHNISSE --------------------------------
+%% VERZEICHNISSE ----------------------------------------------------------------------------------
 
-\setlength{\parskip}{0.5\baselineskip}
+\input{pages/abkuerzungen}	% Datei mit Abkürzungen laden
+%\glsaddall
+%\printglossaries%[title=Verzeichnis verwendeter Formelzeichen und Abkürzungen, toctitle=Abkürzungsverzeichnis]
 
-%\input{pages/abkuerzungen}				% Datei mit Abkürzungen laden
-%\renewcommand{\nomname}{Verzeichnis verwendeter Formelzeichen und Abkürzungen}
-%\setlength{\nomlabelwidth}{.20\hsize}
-%\renewcommand{\nomlabel}[1]{#1 \dotfill}
-%\setlength{\nomitemsep}{-\parsep}
-%\printnomenclature						% Erzeugen des Abkürzungsverzeichnises, siehe auch Inhalt der Datei pages/abkuerzungen.tex
-\cleardoublepage
+\printnomenclature	% Erzeugen des Abkürzungsverzeichnises, siehe auch Inhalt der Datei pages/abkuerzungen.tex
+\clearpage
 
-%\renewcommand{\glossaryname}{Glossar} % Glossar erzeugen
+\listoffigures 	% Erzeugen des Abbildungsverzeichnisses 
+\clearpage
 
-\printglossaries
-\cleardoublepage
+\listoftables 	% Erzeugen des Tabellenverzeichnisses
+\clearpage
 
-\listoffigures 							% Erzeugen des Abbildungsverzeichnisses 
-\cleardoublepage
+%% ANHANG -----------------------------------------------------------------------------------------
 
-\listoftables 							% Erzeugen des Tabellenverzeichnisses
-\cleardoublepage
+\appendix					% Wechsel des Nummerierungsmodus auf Anhang (1.1.1 => A.1, B.1, ...)
+\pagenumbering{Roman}		% große, römische Seitenzahlen für Anhang (zur Unterscheidung von Titelei)
+\include{chapters/anhang}	% Anhang einfügen
 
-%% ANHANG ---------------------------------------
-
-\appendix
-%\clearpage
-%\pagenumbering{Roman}					% große, römische Seitenzahlen für Anhang, falls gewünscht
-\include{chapter/anhang}
-
-\end{document}
+\end{document} 
+% Ende des Dokuments ==============================================================================
