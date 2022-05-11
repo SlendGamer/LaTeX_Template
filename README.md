@@ -1,6 +1,6 @@
 # Vorlage für wissenschaftliche Dokumentation
 
-Diese Vorlage basiert auf der Vorlage von Herrn Kibler: [GitHub - tkibler/vorlage_latex_doku](https://github.com/tkibler/vorlage_latex_doku.git)
+Diese Vorlage basiert auf der Vorlage von Herrn Kibler: [tkibler/vorlage_latex_doku](https://github.com/tkibler/vorlage_latex_doku.git)
 
 Ich habe sie angepasst, d.h.
 
