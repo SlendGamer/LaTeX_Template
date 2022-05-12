@@ -19,247 +19,26 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
-    \entry{academic-no-date}{misc}{}
+    \entry{test}{misc}{}
       \name{author}{1}{}{%
-        {{hash=9e1c63fe89fae4da8db2c9e550b3e6c1}{%
-           family={{Academic}},
+        {{hash=c481b00a606907fd59b4d46623b8d99d}{%
+           family={Autor},
            familyi={A\bibinitperiod}}}%
       }
-      \strng{namehash}{9e1c63fe89fae4da8db2c9e550b3e6c1}
-      \strng{fullhash}{9e1c63fe89fae4da8db2c9e550b3e6c1}
-      \strng{bibnamehash}{9e1c63fe89fae4da8db2c9e550b3e6c1}
-      \strng{authorbibnamehash}{9e1c63fe89fae4da8db2c9e550b3e6c1}
-      \strng{authornamehash}{9e1c63fe89fae4da8db2c9e550b3e6c1}
-      \strng{authorfullhash}{9e1c63fe89fae4da8db2c9e550b3e6c1}
-      \field{labelalpha}{Aca}
+      \strng{namehash}{c481b00a606907fd59b4d46623b8d99d}
+      \strng{fullhash}{c481b00a606907fd59b4d46623b8d99d}
+      \strng{bibnamehash}{c481b00a606907fd59b4d46623b8d99d}
+      \strng{authorbibnamehash}{c481b00a606907fd59b4d46623b8d99d}
+      \strng{authornamehash}{c481b00a606907fd59b4d46623b8d99d}
+      \strng{authorfullhash}{c481b00a606907fd59b4d46623b8d99d}
+      \field{labelalpha}{Authr}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Kurven gleicher Lautstärkepegel}
+      \field{title}{Titel}
+      \field{year}{Jahr}
       \true{nocite}
-      \verb{urlraw}
-      \verb https://de-academic.com/dic.nsf/dewiki/808446
-      \endverb
-      \verb{url}
-      \verb https://de-academic.com/dic.nsf/dewiki/808446
-      \endverb
-    \endentry
-    \entry{bittner-audio-int-gmbh-2011}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=9a179c77430478e9ca13492af486b866}{%
-           family={{Bittner Audio Int. GmbH}},
-           familyi={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{9a179c77430478e9ca13492af486b866}
-      \strng{fullhash}{9a179c77430478e9ca13492af486b866}
-      \strng{bibnamehash}{9a179c77430478e9ca13492af486b866}
-      \strng{authorbibnamehash}{9a179c77430478e9ca13492af486b866}
-      \strng{authornamehash}{9a179c77430478e9ca13492af486b866}
-      \strng{authorfullhash}{9a179c77430478e9ca13492af486b866}
-      \field{labelalpha}{Bit11}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{09}
-      \field{title}{{100V Technik}}
-      \field{year}{2011}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.bittner-audio.com/de/information/100v-technik/
-      \endverb
-      \verb{url}
-      \verb https://www.bittner-audio.com/de/information/100v-technik/
-      \endverb
-    \endentry
-    \entry{esb-solutions-gmbh-no-date}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=35d4dfce3fe12ecba3b4086edf8fa472}{%
-           family={{ESB Solutions GmbH}},
-           familyi={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{35d4dfce3fe12ecba3b4086edf8fa472}
-      \strng{fullhash}{35d4dfce3fe12ecba3b4086edf8fa472}
-      \strng{bibnamehash}{35d4dfce3fe12ecba3b4086edf8fa472}
-      \strng{authorbibnamehash}{35d4dfce3fe12ecba3b4086edf8fa472}
-      \strng{authornamehash}{35d4dfce3fe12ecba3b4086edf8fa472}
-      \strng{authorfullhash}{35d4dfce3fe12ecba3b4086edf8fa472}
-      \field{labelalpha}{ESB}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Richtdiagramm Lautsprecher}}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://esbsolutions.de/sprachalarmierung/handbuch-grundbegriffe-einheiten/lautsprecher/
-      \endverb
-      \verb{url}
-      \verb https://esbsolutions.de/sprachalarmierung/handbuch-grundbegriffe-einheiten/lautsprecher/
-      \endverb
-    \endentry
-    \entry{joachim-herz-stiftung-no-date}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=1f7452a8c66c7d1f153f54ccfd578ba5}{%
-           family={{Joachim Herz Stiftung}},
-           familyi={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{1f7452a8c66c7d1f153f54ccfd578ba5}
-      \strng{fullhash}{1f7452a8c66c7d1f153f54ccfd578ba5}
-      \strng{bibnamehash}{1f7452a8c66c7d1f153f54ccfd578ba5}
-      \strng{authorbibnamehash}{1f7452a8c66c7d1f153f54ccfd578ba5}
-      \strng{authornamehash}{1f7452a8c66c7d1f153f54ccfd578ba5}
-      \strng{authorfullhash}{1f7452a8c66c7d1f153f54ccfd578ba5}
-      \field{labelalpha}{Joa}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Lärmquellen}}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.leifiphysik.de/akustik/akustische-phaenomene/ausblick/schallfeldgroessen
-      \endverb
-      \verb{url}
-      \verb https://www.leifiphysik.de/akustik/akustische-phaenomene/ausblick/schallfeldgroessen
-      \endverb
-    \endentry
-    \entry{kafurke-2020}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=d69c2e33b439852bf2f6cf2847c7439b}{%
-           family={Kafurke},
-           familyi={K\bibinitperiod},
-           given={Markus},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{d69c2e33b439852bf2f6cf2847c7439b}
-      \strng{fullhash}{d69c2e33b439852bf2f6cf2847c7439b}
-      \strng{bibnamehash}{d69c2e33b439852bf2f6cf2847c7439b}
-      \strng{authorbibnamehash}{d69c2e33b439852bf2f6cf2847c7439b}
-      \strng{authornamehash}{d69c2e33b439852bf2f6cf2847c7439b}
-      \strng{authorfullhash}{d69c2e33b439852bf2f6cf2847c7439b}
-      \field{labelalpha}{Kaf20}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{05}
-      \field{title}{{Technische Grundlagen und Vorteile der 100 Volt Technik}}
-      \field{year}{2020}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.stage223.com/wissen/technische-grundlagen-und-vorteile-der-100-volt-technik/
-      \endverb
-      \verb{url}
-      \verb https://www.stage223.com/wissen/technische-grundlagen-und-vorteile-der-100-volt-technik/
-      \endverb
-    \endentry
-    \entry{kerner-2016}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=90d48b4233bd0f4cc96e5a2dcf68af5f}{%
-           family={Kerner},
-           familyi={K\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{90d48b4233bd0f4cc96e5a2dcf68af5f}
-      \strng{fullhash}{90d48b4233bd0f4cc96e5a2dcf68af5f}
-      \strng{bibnamehash}{90d48b4233bd0f4cc96e5a2dcf68af5f}
-      \strng{authorbibnamehash}{90d48b4233bd0f4cc96e5a2dcf68af5f}
-      \strng{authornamehash}{90d48b4233bd0f4cc96e5a2dcf68af5f}
-      \strng{authorfullhash}{90d48b4233bd0f4cc96e5a2dcf68af5f}
-      \field{labelalpha}{Ker16}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Geschichte der Beschallungstechnik}}
-      \field{year}{2016}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://docplayer.org/17040422-1-einfuehrung-2-2-geschichte-der-beschallungstechnik-2-3-klein-pa-und-ihre-erweiterungen-3-4-grossbeschallung-4-4-1-stacks.html
-      \endverb
-      \verb{url}
-      \verb https://docplayer.org/17040422-1-einfuehrung-2-2-geschichte-der-beschallungstechnik-2-3-klein-pa-und-ihre-erweiterungen-3-4-grossbeschallung-4-4-1-stacks.html
-      \endverb
-    \endentry
-    \entry{rateike-2017}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=da5eacee11bd79704dcaf7b52f9ceef0}{%
-           family={Rateike},
-           familyi={R\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{da5eacee11bd79704dcaf7b52f9ceef0}
-      \strng{fullhash}{da5eacee11bd79704dcaf7b52f9ceef0}
-      \strng{bibnamehash}{da5eacee11bd79704dcaf7b52f9ceef0}
-      \strng{authorbibnamehash}{da5eacee11bd79704dcaf7b52f9ceef0}
-      \strng{authornamehash}{da5eacee11bd79704dcaf7b52f9ceef0}
-      \strng{authorfullhash}{da5eacee11bd79704dcaf7b52f9ceef0}
-      \field{labelalpha}{Rat17}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Vorlesungsunterlagen zur Planung von Audio-, Brandmeldesystemen und Beschallungsanlagen}}
-      \field{year}{2017}
-      \true{nocite}
-    \endentry
-    \entry{schnabel-no-date}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=c4436a86c7d5ea5c6cb983f4bb970f6c}{%
-           family={Schnabel},
-           familyi={S\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{c4436a86c7d5ea5c6cb983f4bb970f6c}
-      \strng{fullhash}{c4436a86c7d5ea5c6cb983f4bb970f6c}
-      \strng{bibnamehash}{c4436a86c7d5ea5c6cb983f4bb970f6c}
-      \strng{authorbibnamehash}{c4436a86c7d5ea5c6cb983f4bb970f6c}
-      \strng{authornamehash}{c4436a86c7d5ea5c6cb983f4bb970f6c}
-      \strng{authorfullhash}{c4436a86c7d5ea5c6cb983f4bb970f6c}
-      \field{labelalpha}{Sch}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Dezibel (dB) / Bel}}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.elektronik-kompendium.de/sites/grd/0304011.htm
-      \endverb
-      \verb{url}
-      \verb https://www.elektronik-kompendium.de/sites/grd/0304011.htm
-      \endverb
-    \endentry
-    \entry{spektrum-akademischer-verlag-no-date}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b5a7063972a089244936c2227441f334}{%
-           family={{Spektrum Akademischer Verlag}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{b5a7063972a089244936c2227441f334}
-      \strng{fullhash}{b5a7063972a089244936c2227441f334}
-      \strng{bibnamehash}{b5a7063972a089244936c2227441f334}
-      \strng{authorbibnamehash}{b5a7063972a089244936c2227441f334}
-      \strng{authornamehash}{b5a7063972a089244936c2227441f334}
-      \strng{authorfullhash}{b5a7063972a089244936c2227441f334}
-      \field{labelalpha}{Spe}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Weber-Fechnersches Gesetz}}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.spektrum.de/lexikon/biologie/weber-fechnersches-gesetz/70397
-      \endverb
-      \verb{url}
-      \verb https://www.spektrum.de/lexikon/biologie/weber-fechnersches-gesetz/70397
-      \endverb
     \endentry
   \enddatalist
 \endrefsection

@@ -1,15 +1,17 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'build/latex_template.blg'
-[243] biber-MSWIN64:340> INFO - === 
-[286] Biber.pm:415> INFO - Reading 'build/latex_template.bcf'
-[407] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[430] Biber.pm:4340> INFO - Processing section 0
-[446] Biber.pm:4531> INFO - Looking for bibtex format file 'literature/literature.bib' for section 0
-[515] bibtex.pm:1689> INFO - LaTeX decoding ...
-[529] bibtex.pm:1494> INFO - Found BibTeX data source 'literature/literature.bib'
-[623] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[635] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[636] Biber.pm:4168> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
-[636] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[661] bbl.pm:654> INFO - Writing 'build/latex_template.bbl' with encoding 'UTF-8'
-[667] bbl.pm:757> INFO - Output to build/latex_template.bbl
+[142] biber-MSWIN64:340> INFO - === 
+[182] Biber.pm:415> INFO - Reading 'build/latex_template.bcf'
+[304] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[325] Biber.pm:4340> INFO - Processing section 0
+[340] Biber.pm:4531> INFO - Looking for bibtex format file 'literature/literature.bib' for section 0
+[391] bibtex.pm:1689> INFO - LaTeX decoding ...
+[397] bibtex.pm:1494> INFO - Found BibTeX data source 'literature/literature.bib'
+[432] Utils.pm:395> WARN - legacy year field 'Jahr' in entry 'test' is not an integer - this will probably not sort properly.
+[444] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[444] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[444] Biber.pm:4168> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[444] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[446] bbl.pm:654> INFO - Writing 'build/latex_template.bbl' with encoding 'UTF-8'
+[446] bbl.pm:757> INFO - Output to build/latex_template.bbl
+[447] Biber.pm:128> INFO - WARNINGS: 1

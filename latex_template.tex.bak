@@ -1,9 +1,7 @@
 % -------------------------------------------------------------------------------------------------
-% Originalvorlage von Prof. Kibler:
-% https://github.com/tkibler/vorlage_latex_doku.git
+% Originalvorlage von Prof. Kibler: https://github.com/tkibler/vorlage_latex_doku.git
 %
-% Angepasste Version von T. Prüß:
-% https://github.com/SlendGamer/LaTeX_Template.git
+% Angepasste Version von T. Prüß: https://github.com/SlendGamer/LaTeX_Template.git
 % -------------------------------------------------------------------------------------------------
 %% PRÄAMBEL =======================================================================================
 \documentclass[
@@ -27,16 +25,16 @@ ngerman
 
 %% Debugging
 %\usepackage{showframe}	% Anzeigen des Seitenlayouts; für Debugging auskommentieren
-%\usepackage{lipsum}	% Erzeugen von Fülltext ('Lorem ipsum ...') zum ausprobieren von neuen Funktionen
+%\usepackage{lipsum}		% Erzeugen von Fülltext ('Lorem ipsum ...') zum ausprobieren von neuen Funktionen
 
 \usepackage{scrhack}			% erlaubt Anpassung der Koma-Skript Klassen	
 \usepackage[utf8]{inputenc} 	% ermöglicht die direkte Eingabe von Umlauten
 \usepackage[T1]{fontenc} 		% Ausgabe aller Zeichen in einer T1-Codierung (wichtig für die Ausgabe von Umlauten!)
-\usepackage[ngerman]{babel} 				% deutsche Trennungsregeln und Übersetzung der festcodierten Überschriften (chapter => kapitel, usw.)
+\usepackage[ngerman]{babel} 	% deutsche Trennungsregeln und Übersetzung der festcodierten Überschriften (chapter => kapitel, usw.)
 
 %% Einstellung der Abstände
-\usepackage[onehalfspacing]{setspace} % Zeilenabstand festlegen
-\usepackage[margin=2.5cm]{geometry} % Ränder entsprechend der Richtlinien
+\usepackage[onehalfspacing]{setspace} 	% Zeilenabstand festlegen
+\usepackage[margin=2.5cm]{geometry} 	% Ränder entsprechend der Richtlinien
 
 \setlength{\parindent}{0ex} 			% bei neuem Absatz nicht einrücken
 \setlength{\parskip}{\bigskipamount} 	% Abstand nach neuem Absatz
@@ -62,12 +60,6 @@ ngerman
   beforeskip=.6\baselineskip,
   afterskip=.6\baselineskip]{subsection}
 
-% -------------------------------------------------------------------------------------------------
-% Folgende Einstellungen sind bei größeren Arbeiten mit viel Text zu empfehlen.
-% Hierbei oben DIV=16 einstellen und Zeile \usepackage[onehalfspacing]{setspace} auskommentieren.
-% \linespread{1.2}\selectfont     % Zeilenabstand erhöhen - größere Werte als 1.2 nicht verwenden!!
-% -------------------------------------------------------------------------------------------------
-
 %% Schriftarten
 %\usepackage{fontspec}	% ermöglicht spezielle Änderungen an der Schriftart
 \usepackage{helvet}		% Änderung der Serifenlosen Schriftart auf Helvetica (Arial); kann bei Bedarf auskommentiert werden
@@ -75,7 +67,7 @@ ngerman
 
 %% Zeichen und Mathematik
 \usepackage{amsmath, amssymb}	% Beinhaltet Ergänzungen für Formeln
-\usepackage{siunitx}		% Vereinfacht die Eingabe von Einheiten in Formeln
+\usepackage{siunitx}			% Vereinfacht die Eingabe von Einheiten in Formeln
 \sisetup{
 	number-unit-product = \;,
 	inter-unit-product = \:,
@@ -89,7 +81,7 @@ ngerman
 %% Einbindung von Grafiken
 \usepackage{graphicx}  	% Einbinden von jpg, png und pdf Grafiken
 \usepackage{float}			% Ermöglicht "Floating-Objects" im Dokument, also Objekte, die frei auf der Seite platziert werden können
-\usepackage{pdfpages}			% Ermöglicht Einführung von bestehenden PDF Seiten (z.B. Datenblätter, Zeichnungen, ...)
+\usepackage{pdfpages}		% Ermöglicht Einführung von bestehenden PDF Seiten (z.B. Datenblätter, Zeichnungen, ...)
 
 %% Formatierung von Bildunter- & überschriften
 \usepackage[
@@ -116,16 +108,16 @@ hyperref=true, 		% hyperref-Paket verwenden, um Links zu erstellen
 %\renewcommand{\@biblabel}[1]{(#1)}
 %\makeatother
 
-\usepackage{enumitem}			% mehr Aufzählungsoptionen
-\usepackage{tabto}				% Ermöglicht Verwendung von Tabstops zur Einrückung von Text
+\usepackage{enumitem}	% mehr Aufzählungsoptionen
+\usepackage{tabto}		% Ermöglicht Verwendung von Tabstops zur Einrückung von Text
 
-\usepackage[					% Einstellungen für Referenzierung
-hyperfootnotes=false			% im pfd-Output werden Fußnoten nicht verlinkt
+\usepackage[			% Einstellungen für Referenzierung
+hyperfootnotes=false	% im pfd-Output werden Fußnoten nicht verlinkt
 ]{hyperref}
 
-\usepackage[					% Einstellungen für Fußnoten
-bottom,							% Ausrichtung  = unten
-multiple,						% Trennung mehrerer Fußnoten durch einen Separator
+\usepackage[			% Einstellungen für Fußnoten
+bottom,					% Ausrichtung  = unten
+multiple,				% Trennung mehrerer Fußnoten durch einen Separator
 hang,
 marginal
 ]{footmisc}
@@ -160,13 +152,6 @@ marginal
 %\makeglossaries	% Neue Variante mit 'glossaries'
 \makenomenclature 	% Alt
 
-% -------------------------------------------------------------------------------------------------
-% Zum Aktualisieren des Abkürzungsverzeichnisses (Nomenklatur) bitte auf der Kommandozeile folgenden Befehl aufrufen:
-% makeindex <Dateiname>.nlo -s nomencl.ist -o <Dateiname>.nls
-% Oder besser: Kann in TexStudio unter Tools-Benutzer als Shortlink angelegt werden
-% Konfiguration unter: Optionen-Erzeugen-Benutzerbefehle: makeindex -s nomencl.ist -t %.nlg -o %.nls %.nlo
-% -------------------------------------------------------------------------------------------------
-
 \usepackage{calc}			% Ermöglicht eine andere Eingabe von Längen (0.8\textwidth)
 \usepackage{xcolor} 		% Ermöglicht Verwendung von Farben in nahezu allen Farbmodellen
 
@@ -198,32 +183,32 @@ marginal
 
 % Einstellung der Quellcode-Hervorhebung
 \lstset{ %
-	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
-	basicstyle=\footnotesize,        % the size of the fonts that are used for the code
-	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
-	breaklines=true,                 % sets automatic line breaking
-	captionpos=t,                    % sets the caption-position to (b) bottom or (t) top
-	commentstyle=\color{mygreen},    % comment style
-	deletekeywords={...},            % if you want to delete keywords from the given language
-	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	backgroundcolor=\color{white},   	% choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\footnotesize,        	% the size of the fonts that are used for the code
+	breakatwhitespace=false,         	% sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 	% sets automatic line breaking
+	captionpos=t,                    	% sets the caption-position to (b) bottom or (t) top
+	commentstyle=\color{mygreen},    	% comment style
+	deletekeywords={...},            	% if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          	% if you want to add LaTeX within your code
 	escapeinside={(*@}{@*)},
-	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-	frame=none,	                   	% "single" adds a frame around the code; "none"
-	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-	keywordstyle=\color{blue},       % keyword style
-	language=[LaTeX]TeX,             % the language of the code
-	morekeywords={*,nomenclature},   % if you want to add more keywords to the set
-	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-	numbersep=5pt,                   % how far the line-numbers are from the code
-	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-	showstringspaces=false,          % underline spaces within strings only
-	showtabs=false,                  % show tabs within strings adding particular underscores
-	stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
-	stringstyle=\color{mymauve},     % string literal style
-	tabsize=2,	                   % sets default tabsize to 2 spaces
-	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+	extendedchars=true,              	% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=none,	                   		% "single" adds a frame around the code; "none"
+	keepspaces=true,                 	% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       	% keyword style
+	language=[LaTeX]TeX,             	% the language of the code
+	morekeywords={*,nomenclature},   	% if you want to add more keywords to the set
+	numbers=left,                    	% where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   	% how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, 	% the style that is used for the line-numbers
+	rulecolor=\color{black},         	% if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                	% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          	% underline spaces within strings only
+	showtabs=false,                  	% show tabs within strings adding particular underscores
+	stepnumber=1,                    	% the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     	% string literal style
+	tabsize=2,	                   		% sets default tabsize to 2 spaces
+	title=\lstname                   	% show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
 %% DEFINES ========================================================================================
@@ -248,33 +233,33 @@ marginal
 
 % Folgende Zeilen definieren Abkürzungen, um Befehle schneller eingeben zu können
 \newcommand{\bs}{\textbackslash}
-\newcommand*\diff{\mathop{}\!\mathrm{d}}				% Differentialzeichen mittels: \diff
-\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}} 		% Differentialzeichen n-ter Ordnung mittels: \Diff[n]
-\newcommand*\jj{\mathop{}\!\mathrm{j}}					% Komplexe Zahl j (in E-Tech gebräuchlich) mittels: \jj
-\let\texteuro\euro 										% Eingabe des Euro-Zeichen über: \texteuro oder \euro
+\newcommand*\diff{\mathop{}\!\mathrm{d}}			% Differentialzeichen mittels: \diff
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}} 	% Differentialzeichen n-ter Ordnung mittels: \Diff[n]
+\newcommand*\jj{\mathop{}\!\mathrm{j}}				% Komplexe Zahl j (in E-Tech gebräuchlich) mittels: \jj
+\let\texteuro\euro 									% Eingabe des Euro-Zeichen über: \texteuro oder \euro
 
 %% BEGINN DES DOKUMENTENINHALTS ===================================================================
 
 \begin{document}
-\let\texteuro\euro					% Eingabe \texteuro, € oder \euro erzeugt gleiches Ergebnis
-\setcounter{secnumdepth}{3}		% maximale Nummerierungstiefe fürs Inhaltsverzeichnis 
-\setcounter{tocdepth}{3}			% analog zu 'secnumdepth' aber allgemein für das Inhaltsverzeichnis
-\sffamily							% Festlegung von Serifenloser Schrift für die Titelei
+\let\texteuro\euro				% Eingabe \texteuro, € oder \euro erzeugt gleiches Ergebnis
+\setcounter{secnumdepth}{3}	% maximale Nummerierungstiefe fürs Inhaltsverzeichnis 
+\setcounter{tocdepth}{3}		% analog zu 'secnumdepth' aber allgemein für das Inhaltsverzeichnis
+\sffamily						% Festlegung von Serifenloser Schrift für die Titelei
 
 %% TITELEI ----------------------------------------------------------------------------------------
 
-\pagenumbering{roman}				% kleine, römische Seitenzahlen für Titelei
-\include{pages/titelseite} 		% erzeugt die Titelseite
-\include{pages/erklaerung} 		% Einbinden der eidestattlichen Erklärung und Sperrvermerk
-\include{chapters/abstract}   		% Einbinden des Abstracts (der Kurzfassung)
+\pagenumbering{roman}			% kleine, römische Seitenzahlen für Titelei
+\include{pages/titelseite} 	% erzeugt die Titelseite
+\include{pages/erklaerung} 	% Einbinden der eidestattlichen Erklärung und Sperrvermerk
+\include{chapters/abstract}   	% Einbinden des Abstracts (der Kurzfassung)
 
-\tableofcontents					% Erzeugen des Inhaltsverzeichnisses
-\clearpage							% Seitenumbruch an aktueller Stelle (alternativ auch '\newpage' möglich)
+\tableofcontents				% Erzeugen des Inhaltsverzeichnisses
+\clearpage						% Seitenumbruch an aktueller Stelle (alternativ auch '\newpage' möglich)
 
 %% BEGINN DES DOKUMENTS ---------------------------------------------------------------------------
 
-\pagenumbering{arabic}	% arabische Seitenzahlen für den Hauptteil
-\rmfamily				% Serifenschrift für Fließtext festlegen
+\pagenumbering{arabic}		% arabische Seitenzahlen für den Hauptteil
+\rmfamily					% Serifenschrift für Fließtext festlegen
 
 \include{chapters/einleitung}
 \include{chapters/grundlagen}
@@ -296,10 +281,10 @@ marginal
 \printnomenclature	% Erzeugen des Abkürzungsverzeichnises, siehe auch Inhalt der Datei pages/abkuerzungen.tex
 \clearpage
 
-\listoffigures 	% Erzeugen des Abbildungsverzeichnisses 
+\listoffigures 		% Erzeugen des Abbildungsverzeichnisses 
 \clearpage
 
-\listoftables 	% Erzeugen des Tabellenverzeichnisses
+\listoftables 		% Erzeugen des Tabellenverzeichnisses
 \clearpage
 
 %% ANHANG -----------------------------------------------------------------------------------------
